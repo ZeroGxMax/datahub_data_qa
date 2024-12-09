@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: DataWarehouseX
+    schema: public
+    tables:
+      - name: products
+        identifier: products
