@@ -7,8 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
-acryl-datahub = "^0.14.1.12"
 acryl-datahub-gx-plugin = "0.14.1.12"
+acryl-datahub = "^0.14.1.12"
 
 
 [build-system]
