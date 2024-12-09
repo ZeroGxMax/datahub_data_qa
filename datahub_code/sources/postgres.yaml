@@ -5,3 +5,4 @@ source:
     database: DataWarehouseX
     username: postgres
     password: postgres
+    convert_urns_to_lowercase: true

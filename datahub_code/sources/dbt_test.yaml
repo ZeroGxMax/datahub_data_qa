@@ -9,6 +9,6 @@ source:
     target_platform: postgres
     # entities_enabled:
     #   test_results: Only
-    entities_enabled:
-      sources: "NO"
-    skip_sources_in_lineage: true
+    # entities_enabled:
+    #   sources: "NO"
+    # skip_sources_in_lineage: true
