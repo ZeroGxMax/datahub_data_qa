@@ -1,0 +1,7 @@
+source:
+  type: postgres
+  config:
+    host_port: localhost:5010
+    database: DataWarehouseX
+    username: postgres
+    password: postgres

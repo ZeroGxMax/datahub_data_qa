@@ -1,0 +1,9 @@
+source:
+  type: file
+  config:
+    filename: ./volume_assert.yaml  # Path to your assertion YAML file
+
+sink:
+  type: datahub-rest
+  config:
+    server: http://localhost:8080

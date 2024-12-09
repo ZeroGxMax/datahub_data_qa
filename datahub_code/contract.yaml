@@ -1,0 +1,5 @@
+entity: urn:li:dataset:(urn:li:dataPlatform:kafka,SampleKafkaDataset,PROD)
+version: 1
+data_quality:
+  - type: unique
+    column: field_bar

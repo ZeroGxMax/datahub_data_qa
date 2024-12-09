@@ -1,0 +1,17 @@
+datahub get urn --urn "urn:li:dataset:(urn:li:dataPlatform:kafka,SampleKafkaDataset,PROD)"
+
+urn:li:assertion:35e1b4573dcfa8931aaa675901a83291
+
+datahub get urn --urn "urn:li:assertion:b664beeb5e0a084216d957ee414bb20a"
+
+datahub assertions upsert -f volume_assert.yaml
+datahub assertions upsert -f assertions/postgres_assertion.yaml
+
+datahub get urn --urn "urn:li:assertion:16b8aa7501a09c91fb75e74c7d6610bc"
+
+datahub ingest -c postgres.yaml
+datahub ingest -c dbt_test.yaml
+
+urn:li:assertion:16b8aa7501a09c91fb75e74c7d6610bc
+
+datahub ingest -c assertions/postgres_assertion.yaml

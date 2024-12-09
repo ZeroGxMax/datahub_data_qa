@@ -1,0 +1,12 @@
+source:
+  type: postgres
+  config:
+    host_port: localhost:5010
+    database: DataWarehouseX
+    username: postgres
+    password: postgres
+
+sink:
+  type: "datahub-rest"
+  config:
+    server: "http://localhost:8080"
